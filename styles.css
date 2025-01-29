@@ -169,3 +169,49 @@ h1 {
     padding: 8px;
 }
 
+.singup-bar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px 40px;
+    background: linear-gradient(to right, purple, cyan);
+}
+
+.singup-bar__content .text {
+    flex-shrink: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+.singup-bar__content .text.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.singup-bar__content .text.subtitle {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.singup-button button {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.singup-button button span {
+    color: #000;
+    font-size: inherit;
+    font-weight: inherit;
+}
