@@ -1,0 +1,86 @@
+/* Reset básico para remover margens, paddings e estilos padrão */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Define box-sizing como border-box para todos os elementos */
+}
+
+html {
+  font-size: 100%; /* Garante que o tamanho da fonte base seja 16px */
+  line-height: 1.5; /* Melhora a legibilidade */
+}
+
+body {
+  line-height: 1;
+  font-family: var(--font-dm-sans, sans-serif); /* Fonte padrão (com fallback) */
+  background-color: #000;
+  color: #fff;
+  -webkit-font-smoothing: antialiased; /* Suaviza as fontes em navegadores WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Suaviza as fontes no Firefox */
+}
+
+ol,
+ul {
+  list-style: none; /* Remove bullets e números de listas */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; /* Garante que elementos gráficos sejam tratados como blocos */
+  max-width: 100%; /* Torna-os responsivos */
+  height: auto; /* Mantém a proporção */
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit; /* Garante que esses elementos herdem a fonte do pai */
+  font-size: inherit; /* Herda o tamanho da fonte */
+  line-height: inherit;
+  color: inherit; /* Herda a cor do texto */
+  background: none; /* Remove fundo padrão */
+  border: none; /* Remove borda padrão */
+  cursor: pointer; /* Garante o cursor nos botões */
+}
+
+a {
+  text-decoration: none; /* Remove sublinhados de links */
+  color: inherit; /* Herda a cor do texto */
+}
+
+table {
+  border-collapse: collapse; /* Remove espaçamento entre células */
+  border-spacing: 0;
+}
+
+blockquote,
+q {
+  quotes: none; /* Remove aspas padrão em blockquotes */
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: ""; /* Remove aspas automáticas */
+}
+
+textarea {
+  resize: none; /* Desativa redimensionamento de textarea (personalizável) */
+}
+
+:focus {
+  outline: 2px solid #00f; /* Exemplo de estilo de foco acessível */
+}
+
+html,
+body,
+#root {
+  height: 100%; /* Garante que o layout ocupe toda a altura da tela */
+}
