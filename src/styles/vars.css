@@ -6,6 +6,9 @@
     --bg-icon: #131313;
     --bg-arrow-color: rgba(0,0,07);
     --bg-search-color: #242424;
+    --bg-login-color: #fff;
+    --bg-navigation-color: #121212;
+    --bg-content-color: #121212;
     --c-subscribe: #a7a7a7;
     --c-login: #000;
 }

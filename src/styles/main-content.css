@@ -14,7 +14,7 @@
     padding: 16px;
     margin: 10px;
     border-radius: 8px;
-    background-color: #121212;
+    background-color: var(--bg-navigation-color);
 }
 
 .header__navigation .navigation {
@@ -86,5 +86,24 @@
     height: 48px;
     color: var(--c-login);
     font-weight: 700;
+    background-color: var(--bg-login-color);
     border-radius: 40px;
+}
+
+.main-content {
+    height: 80vh;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: var(--bg-content-color);
+}
+
+.greeting-title {
+    font-weight: 700;
+    padding: 16px;
+}
+
+.greeting-subtitle {
+    font-weight: 400;
+    padding: 16px;
 }
